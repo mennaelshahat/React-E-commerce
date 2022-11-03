@@ -1,5 +1,6 @@
 {
   "name": "react_task",
+  "homepage": "https://mennaelshahat.github.io/React-E-commerce/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,6 +13,7 @@
     "bootstrap": "^5.2.0",
     "bootstrap-icons": "^1.9.1",
     "formik": "^2.2.9",
+    "gh-pages": "^4.0.0",
     "jquery": "^3.6.1",
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",
@@ -29,6 +31,8 @@
     "yup": "^0.32.11"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
